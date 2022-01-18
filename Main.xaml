@@ -1,0 +1,219 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="671,904" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sam="clr-namespace:Smartsheet.Api.Models;assembly=smartsheet-csharp-sdk" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ubac="clr-namespace:UiPath.BAF.Activities.ContextModel;assembly=UiPath.Smartsheet.Activities" xmlns:ubme="clr-namespace:UiPath.BAF.Models.Entity;assembly=UiPath.Smartsheet" xmlns:ubt="clr-namespace:UiPath.BAF.Telemetry;assembly=UiPath.Smartsheet" xmlns:ucm="clr-namespace:UiPath.CodeGen.Model;assembly=UiPath.Smartsheet" xmlns:ucmc="clr-namespace:UiPath.CodeGen.Models.Connection;assembly=UiPath.Smartsheet" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UiPath.Smartsheet.Activities;assembly=UiPath.Smartsheet.Activities" xmlns:usm="clr-namespace:UiPath.Smartsheet.Models;assembly=UiPath.Smartsheet" xmlns:uss="clr-namespace:UiPath.Smartsheet.Services;assembly=UiPath.Smartsheet" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>Smartsheet.Api.Models</x:String>
+      <x:String>UiPath.BAF.Models.Entity</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.BAF.Properties</x:String>
+      <x:String>UiPath.BAF.Enums</x:String>
+      <x:String>UiPath.BAF.ServiceInterfaces</x:String>
+      <x:String>UiPath.BAF.Models.CrudOperation</x:String>
+      <x:String>UiPath.BAF.Telemetry</x:String>
+      <x:String>UiPath.BAF.Models.Response</x:String>
+      <x:String>UiPath.Smartsheet.Activities</x:String>
+      <x:String>UiPath.CodeGen.Activities</x:String>
+      <x:String>UiPath.BAF.Activities</x:String>
+      <x:String>UiPath.Swagger.Models</x:String>
+      <x:String>UiPath.CodeGen.Models.Connection</x:String>
+      <x:String>UiPath.Smartsheet.Models</x:String>
+      <x:String>UiPath.BAF.Models.Connection</x:String>
+      <x:String>UiPath.BAF.Models.Connection.APIConnection</x:String>
+      <x:String>UiPath.BAF.Activities.ContextModel</x:String>
+      <x:String>UiPath.BAF.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>smartsheet-csharp-sdk</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Smartsheet</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Smartsheet.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,839" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sam:Column" Name="SmartSheetColumn" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign DisplayName="Init Column Object" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sam:Column">[SmartSheetColumn]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sam:Column">[New Column()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Existing Column ID - To Update Type" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Nullable(x:Int64)">[SmartSheetColumn.Id]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Nullable(x:Int64)">[1234]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="New Column Type to be Changed for the column" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Nullable(sam:ColumnType)">[SmartSheetColumn.Type]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Nullable(sam:ColumnType)">[ColumnType.DATETIME]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:Comment sap:VirtualizedContainerService.HintSize="434,74" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// If required, we can add more assigns to change other props" />
+    <usa:SmartsheetScopeActivity Connection="{x:Null}" DesignConnectionRequest="{x:Null}" ExistingConnection="{x:Null}" SelectedDesignAuthType="{x:Null}" SwaggerClient="{x:Null}" sap2010:Annotation.AnnotationText="You can add your own sheet connection and sheet ID.&#xD;&#xA;I just added dummy" DesignConnectionEnabled="False" DisplayName="Smartsheet Application Scope" ExistingConnectionType="usm:SmartsheetConnection" sap:VirtualizedContainerService.HintSize="434,333" sap2010:WorkflowViewState.IdRef="SmartsheetScopeActivity_1" RefreshCacheEnabled="False" SelectedAuthType="Existing Connection" TelemetryEnabled="False" ThrowExceptionOnError="False">
+      <usa:SmartsheetScopeActivity.Body>
+        <ActivityAction x:TypeArguments="ubac:ScopeActivityContext">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ubac:ScopeActivityContext" Name="ScopeActivityContext" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,153" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <usa:SmartsheetInvokeActivity ConfiguredBusinessEntity="{x:Null}" FieldsSelectionPageProperties="{x:Null}" Section="{x:Null}" Status="{x:Null}" BusinessEntityName="UpdateColumn" Category="SheetColumn" CrudOperation="Function" DesignConnectionEnabled="False" DisplayName="Invoke Smartsheet Operation" HideCascadingDropdown="False" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="SmartsheetInvokeActivity_1" ScopeActivityType="usa:SmartsheetScopeActivity">
+              <usa:SmartsheetInvokeActivity.BusinessEntity>
+                <ubme:BusinessEntity AuthFields="{x:Null}" Connection="{x:Null}" Id="{x:Null}" Metadata="{x:Reference __ReferenceID0}" Name="UpdateColumn">
+                  <ubme:BusinessEntity.AllFields>
+                    <scg:List x:TypeArguments="ubme:EntityField" Capacity="4">
+                      <x:Reference>__ReferenceID1</x:Reference>
+                      <x:Reference>__ReferenceID2</x:Reference>
+                      <x:Reference>__ReferenceID3</x:Reference>
+                    </scg:List>
+                  </ubme:BusinessEntity.AllFields>
+                  <ubme:BusinessEntity.EntityMetadata>
+                    <ubme:EntityMetadata Description="{x:Null}" EligibleOperations="-1" IsCustomEntity="False" Name="UpdateColumn">
+                      <ubme:EntityMetadata.Metadata>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID0">
+                          <x:String x:Key="Client">Smartsheet.Api.SheetColumnResources</x:String>
+                          <x:String x:Key="ClientRelativePath">SheetResources.ColumnResources</x:String>
+                          <x:String x:Key="Operation">UpdateColumn</x:String>
+                          <x:String x:Key="OperationCategory">SheetColumnResources</x:String>
+                          <x:String x:Key="OperationAnnotation">None</x:String>
+                          <x:String x:Key="OperationName">UpdateColumn</x:String>
+                          <x:String x:Key="UniqueOperationName">SheetColumnResources.UpdateColumn</x:String>
+                        </scg:Dictionary>
+                      </ubme:EntityMetadata.Metadata>
+                    </ubme:EntityMetadata>
+                  </ubme:BusinessEntity.EntityMetadata>
+                  <ubme:BusinessEntity.SelectedFields>
+                    <scg:List x:TypeArguments="ubme:EntityField" Capacity="3">
+                      <x:Reference>__ReferenceID1</x:Reference>
+                      <x:Reference>__ReferenceID2</x:Reference>
+                      <x:Reference>__ReferenceID3</x:Reference>
+                    </scg:List>
+                  </ubme:BusinessEntity.SelectedFields>
+                  <ubme:BusinessEntity.TelemetryProperties>
+                    <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+                  </ubme:BusinessEntity.TelemetryProperties>
+                </ubme:BusinessEntity>
+              </usa:SmartsheetInvokeActivity.BusinessEntity>
+              <usa:SmartsheetInvokeActivity.PopulatedAPIParameters>
+                <scg:Dictionary x:TypeArguments="x:String, ubme:EntityField" />
+              </usa:SmartsheetInvokeActivity.PopulatedAPIParameters>
+              <usa:SmartsheetInvokeActivity.SelectedFields>
+                <scg:List x:TypeArguments="ubme:EntityField" Capacity="3">
+                  <ucm:CodeGenEntityField x:TypeArguments="x:Int64" ContainingType="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" InOutArgumentValue="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" OutArgumentValue="{x:Null}" SampleValue="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID1" ArgumentDirection="In" ArgumentType="x:Int64" DataType="Int64" Description="the sheet Id" DisplayName="SheetId" FieldName="SheetId" FormDataType="ExpressionTextBox" InArgumentValue="123" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" ShouldFilterOnChange="False">
+                    <ucm:CodeGenEntityField.ArgumentValue>
+                      <InArgument x:TypeArguments="x:Int64">123</InArgument>
+                    </ucm:CodeGenEntityField.ArgumentValue>
+                  </ucm:CodeGenEntityField>
+                  <ucm:CodeGenEntityField x:TypeArguments="sam:Column" ContainingType="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" InOutArgumentValue="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" OutArgumentValue="{x:Null}" SampleValue="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID2" ArgumentDirection="In" ArgumentType="sam:Column" DataType="Column" Description="column object to update" DisplayName="Column" FieldName="Column" FormDataType="ExpressionTextBox" InArgumentValue="[SmartSheetColumn]" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" ShouldFilterOnChange="False">
+                    <ucm:CodeGenEntityField.ArgumentValue>
+                      <InArgument x:TypeArguments="sam:Column">[SmartSheetColumn]</InArgument>
+                    </ucm:CodeGenEntityField.ArgumentValue>
+                  </ucm:CodeGenEntityField>
+                  <ucm:CodeGenEntityField x:TypeArguments="sam:Column" ArgumentValue="{x:Null}" ContainingType="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" InArgumentValue="{x:Null}" InOutArgumentValue="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" OutArgumentValue="{x:Null}" SampleValue="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID3" ArgumentDirection="Out" ArgumentType="sam:Column" DataType="Column" Description="the updated column" DisplayName="Response" FieldName="Response" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" ShouldFilterOnChange="False" />
+                </scg:List>
+              </usa:SmartsheetInvokeActivity.SelectedFields>
+              <usa:SmartsheetInvokeActivity.ServiceFactory>
+                <uss:SmartsheetServiceFactory />
+              </usa:SmartsheetInvokeActivity.ServiceFactory>
+              <usa:SmartsheetInvokeActivity.TelemetryProperties>
+                <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+              </usa:SmartsheetInvokeActivity.TelemetryProperties>
+            </usa:SmartsheetInvokeActivity>
+          </Sequence>
+        </ActivityAction>
+      </usa:SmartsheetScopeActivity.Body>
+      <usa:SmartsheetScopeActivity.ConnectionParameters>
+        <scg:List x:TypeArguments="ucmc:ConnectionParam" Capacity="0" />
+      </usa:SmartsheetScopeActivity.ConnectionParameters>
+      <usa:SmartsheetScopeActivity.DesignConnectionParameters>
+        <scg:List x:TypeArguments="ucmc:ConnectionParam" Capacity="0" />
+      </usa:SmartsheetScopeActivity.DesignConnectionParameters>
+      <usa:SmartsheetScopeActivity.ServiceFactory>
+        <uss:SmartsheetServiceFactory />
+      </usa:SmartsheetScopeActivity.ServiceFactory>
+      <usa:SmartsheetScopeActivity.SupportedAuthTypes>
+        <scg:List x:TypeArguments="x:String" Capacity="4">
+          <x:String>Existing Connection</x:String>
+          <x:String>OAuth</x:String>
+          <x:String>API Token</x:String>
+          <x:String xml:space="preserve">OAuth Passthrough </x:String>
+        </scg:List>
+      </usa:SmartsheetScopeActivity.SupportedAuthTypes>
+      <usa:SmartsheetScopeActivity.TelemetryProperties>
+        <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+      </usa:SmartsheetScopeActivity.TelemetryProperties>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </usa:SmartsheetScopeActivity>
+  </Sequence>
+</Activity>
